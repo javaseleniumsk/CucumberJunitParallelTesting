@@ -1,0 +1,254 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 23174000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is logged into the application \"http://automationpractice.com/index.php\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://automationpractice.com/index.php\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefinitions.AccountsSteps.the_user_is_logged_into_the_application(java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "dec2020secondbatch@gmail.com",
+                  "Selenium@12345"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-08T08:08:47.665Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.Hooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 9132000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.Hooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "verify the logout button",
+        "description": "",
+        "id": "accounts-feature;verify-the-logout-button",
+        "after": [
+          {
+            "result": {
+              "duration": 788000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.Hooks.quitBrowser()"
+            }
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 32000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user is in accounts page",
+            "match": {
+              "location": "stepdefinitions.AccountsSteps.user_is_in_accounts_page()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@account"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Accounts feature",
+    "description": "",
+    "id": "accounts-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/AppFeatures/AccountsPage.feature",
+    "tags": [
+      {
+        "name": "@account",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-01-08T08:09:21.043Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.Hooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 6082000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.Hooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Forgot passoword link",
+        "description": "",
+        "id": "login-page;forgot-passoword-link",
+        "after": [
+          {
+            "result": {
+              "duration": 841000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.Hooks.quitBrowser()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9690000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user is in login page \"http://automationpractice.com/index.php\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://automationpractice.com/index.php\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepdefinitions.LoginSteps.user_is_in_login_page(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3738000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "has clicked on signin button",
+            "match": {
+              "location": "stepdefinitions.LoginSteps.has_clicked_on_signin_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 109000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "forgot password link should be displayed",
+            "match": {
+              "location": "stepdefinitions.LoginSteps.forgot_password_link_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Login Page",
+    "description": "",
+    "id": "login-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/AppFeatures/LoginPage.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
