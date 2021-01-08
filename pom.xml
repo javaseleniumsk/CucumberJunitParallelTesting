@@ -106,9 +106,9 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>${maven.surefire.version}</version>
 				<configuration>
-					<!-- <includes>
+					<includes>
 						<include>**/ParallelRun.java</include>
-					</includes> -->
+					</includes>
 					<parallel>methods</parallel>
 					<threadCount>4</threadCount>
 					<useUnlimitedThreads>false</useUnlimitedThreads>
