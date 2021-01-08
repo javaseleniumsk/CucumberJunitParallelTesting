@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 
 import com.factory.DriverFactory;
 import com.qa.utilities.ElementUtil;

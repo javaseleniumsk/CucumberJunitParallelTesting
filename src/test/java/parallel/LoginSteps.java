@@ -1,6 +1,6 @@
 package parallel;
 
-import org.testng.Assert;
+import org.junit.Assert;
 
 import com.factory.DriverFactory;
 import com.qa.utilities.ElementUtil;
